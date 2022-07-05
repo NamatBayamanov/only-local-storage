@@ -1,0 +1,13 @@
+.Background {
+
+}
+.Background {
+
+  & .background {
+    background-color: greenyellow;
+    height: 500px;
+    & .content {
+      
+    }
+  }
+}
