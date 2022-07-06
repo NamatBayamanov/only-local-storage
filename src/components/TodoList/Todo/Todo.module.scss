@@ -1,0 +1,11 @@
+.Todo {
+
+}
+.Todo {
+  & .item__text {
+    color: red;
+  }
+  & .strick {
+    text-decoration: line-through;
+  }
+}
