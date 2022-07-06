@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import classes from "./TodoForm.module.scss";
 function TodoForm({onAddTask}) {
   const [userInput, setuserInput] = useState("_ ");
-  const [userInput2, setuserInput2] = useState("_");
+  const [userInput2, setuserInput2] = useState(" _ ");
   const [userInput3, setuserInput3] = useState(0);
 
 
@@ -20,12 +20,13 @@ function TodoForm({onAddTask}) {
     
   }
   function onChangeInput(event) {
-    setuserInput(event.target.value);  
+    setuserInput(event.target.value.toUpperCase());
+    // setuserInput(event.target.value);  
 
     window.localStorage.setItem("first_name", event.target.value);
   }
   function onChangeInput2(event) {
-    setuserInput2(event.target.value);
+    setuserInput2(event.target.value.toUpperCase());
     window.localStorage.setItem("last_name", event.target.value);
   }
   function onChangeInput3(event) {    
