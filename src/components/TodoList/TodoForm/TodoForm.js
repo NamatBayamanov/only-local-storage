@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import classes from "./TodoForm.module.scss";
 function TodoForm({onAddTask}) {
-  const [userInput, setuserInput] = useState("_ ");
-  const [userInput2, setuserInput2] = useState(" _ ");
+  const [userInput, setuserInput] = useState(``);
+  const [userInput2, setuserInput2] = useState(``);
   const [userInput3, setuserInput3] = useState(0);
 
 
