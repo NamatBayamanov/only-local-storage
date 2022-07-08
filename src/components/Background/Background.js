@@ -3,18 +3,18 @@ import classes from "./Background.module.scss";
 function Background() {
 
   const [styles2, setStyles2] = useState({
-    backgroundColor: `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`,
-    height: 500 + "px",
+    // backgroundColor: `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`,
+    // height: 500 + "px",
   });
 
 
 
 
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     setStyles2({backgroundColor: `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`, height: 500 + "px", transition: 1 + "s",}); 
-  //   }, 1000);
-  // }, [setStyles2]);
+  useEffect(() => {
+    setInterval(() => {
+      setStyles2({backgroundColor: `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`, height: 500 + "px", transition: 1 + "s",}); 
+    }, 1000);
+  }, [setStyles2]);
 
 
 
